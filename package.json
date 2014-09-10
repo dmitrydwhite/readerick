@@ -1,0 +1,23 @@
+{
+  "name": "readerick",
+  "version": "0.0.0",
+  "description": "A repository of users favorite inspirational quotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dmitrydwhite/readerick.git"
+  },
+  "keywords": [
+    "quotes",
+    "readerick"
+  ],
+  "author": "Dmitry White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrydwhite/readerick/issues"
+  },
+  "homepage": "https://github.com/dmitrydwhite/readerick"
+}
