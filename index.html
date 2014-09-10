@@ -2,24 +2,40 @@
 <html ng-app="Readerick">
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <script type="text/javascript" src="angular.min.js"></script>
   <script type="text/javascript" src="application.js"></script>
   <title>readerick.</title>
 </head>
 <body ng-controller="QuoteController as rdrk">
-  <div clas="container-fluid">
+  <div clas="container">
 
   <header>
     <h1 class="text-center">readerick.</h1>
     <h3 class="text-center">Inspiring Writers...</h3>
   </header>
 
+
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Quotations</a></li>
+    <li><a href="#">Favorites</a></li>
+    <li><a href="#">New Quote</a></li>
+  </ul>
+
+
   <div class="list-group" ng-repeat="quote in rdrk.quotes">
     <li class="list-group-item">
-    {{quote.author}}
+    {{quote.content}}
+    <p class="text-right"><cite>-{{quote.author}}</cite></p>
+    <p class="text-right"><i>{{quote.source}}</i></p>
     </li>
   </div>
 
   </div><!--Closes container div-->
+
+  <!--JS dependencies required within the body-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>
